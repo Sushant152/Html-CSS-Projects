@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RealTime Character Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Real time Charcter counter</h2>
+      <textarea
+        name=""
+        id="txtArea"
+        placeholder="Please type your text"
+        maxlength="100"
+      ></textarea>
+      <div class="counter">
+        <p>
+          Total Characters: <span class="total-char" id="total-char">0</span>
+        </p>
+        <p>
+          Remaining Characters:
+          <span class="remaing-char" id="remaing-char">100</span>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const txtArea = document.getElementById("txtArea");
+      const totalChar = document.getElementById("total-char");
+      const remChar = document.getElementById("remaing-char");
+
+      txtArea.addEventListener("keyup", () => {
+        updateCounter();
+      });
+
+      function updateCounter() {
+        totalChar.innerText = txtArea.value.length;
+        remChar.innerText =  txtArea.getAttribute("maxlength")- txtArea.value.length;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive nav bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../2-Responsive-Navbar Html css js/navbar.css" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="left">
+        <img
+          class="logo"
+          src="../Responsive-Navbar Html css js/images/Devenspace.png"
+          alt=""
+        />
+        <h1>Learn Javascipt</h1>
+      </div>
+
+      <ul class="shown">
+        <li class="mobile-scren"><a href="#">Home</a></li>
+        <li class="mobile-scren"><a href="#">About</a></li>
+        <li class="mobile-scren"><a href="#">Contact</a></li>
+        <li class="theme-setting">
+          <a href="#"><i class="fa-solid fa-gear"></i></a>
+        </li>
+        <li class="bar">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+
+      <ul class="bar-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="close">
+          <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </li>
+      </ul>
+    </nav>
+   
+      <div class="theme-container">
+       
+        <div class="container">
+          <div class="theme" id="default-theme"></div>
+          <a href="#" id="white-color">Default Theme</a>
+        </div>
+
+        <div class="container">
+          <div class="theme" id="black-theme"></div>
+          <a href="#" id="black-color">Dark Theme</a>
+        </div>
+
+        <div class="container">
+          <div class="theme" id="blue-theme"></div>
+          <a href="#" id="blue-color">Blue Theme</a>
+        </div>
+       
+      </div>
+
+      <section class="para">
+        
+        <div class="para-container">
+          <h1>Introduction to JavaScript</h1>
+        <div class="topic-items">
+          <ul>
+            <li>What is JavaScript?</li>
+            <li>JavaScript vs. ECMAScript</li>
+            <li>Features of JavaScript</li>
+            <li>How JavaScript Works in Browsers</li>
+            <li>Setting Up JavaScript: Console & External Files</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="para-container">
+        <h1>JavaScript Basics</h1>
+      <div class="topic-items">
+        <ul>
+          <li>Variables (var, let, const)</li>
+          <li>Data Types (String, Number, Boolean, Null, Undefined, Symbol, BigInt)</li>
+          <li>Operators (+, -, *, /, %, **, ++, --)</li>
+          <li>Type Conversion (parseInt(), parseFloat(), Number(), String())</li>
+          <li> Comments (// single-line, /* multi-line */)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="para-container">
+      <h1>Control Flow</h1>
+    <div class="topic-items">
+      <ul>
+        <li>Conditional Statements (if, else, switch)</li>
+        <li>Loops (for, while, do while)</li>
+        <li>break and continue</li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="para-container">
+    <h1>Functions in JavaScript</h1>
+  <div class="topic-items">
+    <ul>
+      <li>Function Declaration</li>
+      <li>Function Expressions</li>
+      <li>Arrow Functions (() => {})</li>
+      <li>Default Parameters</li>
+      <li>Rest Parameters (...args)</li>
+      <li>Callback Functions</li>
+    </ul>
+  </div>
+</div>
+
+<div class="para-container">
+  <h1>JavaScript Objects</h1>
+<div class="topic-items">
+  <ul>
+    <li>Creating Objects ({ key: value })</li>
+    <li>Object Methods</li>
+    <li>this Keyword</li>
+    <li>Object Constructors</li>
+    <li>Object.keys(), Object.values(), Object.entries()</li>
+    <li>Object.assign(), Object.freeze(), Object.seal()</li>
+    <li>JSON.stringify(), JSON.parse()</li>
+  </ul>
+</div>
+</div>
+
+      </section>
+
+    <script src="../Responsive-Navbar Html css js/index.js">
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bg-color Switch</title>
+    <link rel="stylesheet" href="../3-Bg-color-switch Html css js/style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <h1>Back-ground Color Changer</h1>
+      <div class="box-container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+      </div>
+    </section>
+
+    <script>
+      const boxes = document.querySelectorAll(".box");
+      const body = document.querySelector("body");
+      boxes.forEach((box) => {
+        box.addEventListener("click", (e) => {
+          if (e.target.id === "box1") body.style.backgroundColor = "brown";
+          else if (e.target.id === "box2")
+            body.style.backgroundColor = "rgb(70, 190, 66, 0.5)";
+          else if (e.target.id === "box3")
+            body.style.backgroundColor = "rgb(159, 129, 197, 0.5)";
+          else if (e.target.id === "box4")
+            body.style.backgroundColor = "rgb(214, 111, 15, 0.5)";
+          else if (e.target.id === "box5")
+            body.style.backgroundColor = "rgb(58, 57, 57, 0.5)";
+          else body.style.backgroundColor = "white";
+        });
+      });
+    </script>
+  </body>
+</html>

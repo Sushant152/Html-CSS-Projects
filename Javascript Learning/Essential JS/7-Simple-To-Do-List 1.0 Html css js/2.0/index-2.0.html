@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      version="1.0"
+    />
+    <title>Simple To Do List</title>
+    <link rel="stylesheet" href="style-2.0.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="main-container">
+      
+    <div class="todolist-container">
+      <div class="first">
+        
+        <h1>ToDo List</h1>
+        <img src="../images/icons8-add-task-48.png" alt="" />
+        
+      </div>
+
+      <input class="inp-element" type="text" placeholder="Add your task" name="inp-data"/>
+      <button class="btn" >Add Task</button>
+      <button class="btn" id="reset-btn" onclick="fullResetLog()" >Reset Log</button>
+      <span><i class="fa-solid fa-toggle-off" id ="btn-2"onclick="populateAndOpenSavedLog()" onmouseover="showInfo(event)" onmouseout="hideInfo(event)" style="color: #b65d7c;"></i></span>
+      
+      <ul class="todoList">
+         <!-- <li class="task-item"><span>taskaaa</span></li>
+        <li class="task-item"><span>task2</span></li>
+        <li class="task-item"><span>task3</span></li>  -->  
+      </ul>
+    </div>
+
+    <p id="hide-log-info">Click to open Log History of task added to the ToDo List application</p>
+    <div class="log-container">
+      <span id="log-history">Log History</span>
+      <table class="log-table">
+      <!--
+        ---Table header and date dynamically created using JS
+      <tr>
+          <th>Task ID</th>
+          <th>Task Name</th>
+          <th>Task creation dateTime</th>
+          <th>IsCompleted</th>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td contenteditable="false">Log in facebook </td>
+          <td>2025-03-29</td>
+          <td>N</td>
+      </tr>
+       <tr>
+        <td>2</td>
+        <td contenteditable="false">Log in Insta</td>
+        <td>2025-03-29</td>
+        <td>N</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td contenteditable="false">Log in Insta</td>
+        <td>2025-03-29</td>
+        <td>N</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td contenteditable="false">Log in Insta</td>
+        <td>2025-03-29</td>
+        <td>N</td>
+      </tr> -->
+      </table>
+      </ul>
+    </div>
+    
+ </div>
+
+ 
+</div>
+    <script src="./ToDoApp-2.0.js"></script>
+  </body>
+</html>
