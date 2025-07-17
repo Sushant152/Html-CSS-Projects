@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <img
+          class="logo"
+          src="../2-Responsive-Navbar Html css js/images/Devenspace.png"
+          alt=""
+        />
+        <h1>Learn JS</h1>
+      </div>
+
+      <ul class="nav-items">
+        <li class="item-big-screen"><a href="#">Home</a></li>
+        <li class="item-big-screen"><a href="#">About</a></li>
+        <li class="item-big-screen"><a href="#">Contact Us</a></li>
+        <li class="item-big-screen"><a href="#">Services</a></li>
+        <li id="menu-bar" onclick="showMenuBarItems()">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+
+      <ul class="menubar-items">
+        <li class="menubar-item"><a href="#">Home</a></li>
+        <li class="menubar-item"><a href="#">About</a></li>
+        <li class="menubar-item"><a href="#">Contact Us</a></li>
+        <li class="menubar-item"><a href="#">Services</a></li>
+        <li class="menubar-item" id="close-menu" onclick="closeMenu()">
+          <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="top-container">
+      <img
+        class="img-web-header"
+        src="../4-Responsive Website/images/img-web.webp"
+        alt=""
+      />
+      <div class="top-content">
+        <span class="first">Let's Learn Javascript</span>
+        <span class="second"
+          >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+          error temporibus laborum, ipsa repellendus nam voluptatibus voluptas?
+          Id reiciendis eveniet, laboriosam dolorem quaerat minus deserunt in
+          laborum error. Explicabo, repellendus? Dignissimos eaque non
+          explicabo, modi officiis magnam earum ipsum iure sed, exercitationem,
+          ipsam sequi optio velit odit quis dolor ducimus sunt. Dolores hic
+          magnam id incidunt porro fuga, totam exercitationem.</span>
+        <form action="" class="user-form">
+          <input type="text" placeholder="Enter your Email Address" />
+          <label id ="subscribe-btn" for="">Subscribe</label>
+        </form>
+      </div>
+    </section>
+
+    <div class="main-body">
+        <div class="topic-head">
+           <h1 class="topic-1">Introduction to Javascript</h1>
+           <span class="topic-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus commodi similique neque mollitia officia, quisquam consectetur repellat molestiae unde sequi soluta dolor nostrum, adipisci in molestias, nam veniam! Consequuntur.
+           Veritatis vitae mollitia perspiciatis nostrum iusto sed dicta sit non beatae porro, odio illo quod magnam voluptate consequatur pariatur dignissimos doloribus quo sint. Modi doloribus, blanditiis saepe pariatur aperiam odio.
+           Quod, deleniti placeat. Dolor dignissimos aperiam possimus animi nihil nam tempore temporibus! Qui, similique reiciendis. Earum, quia similique architecto totam adipisci exercitationem ducimus aspernatur alias atque amet officia qui quos!</span>
+        </div>
+    </div>
+
+    
+    <script src="../4-Responsive Website/code.js"></script>
+  </body>
+</html>
