@@ -1,0 +1,189 @@
+/* Improved, modern, and accessible styles for AI ToDo List */
+:root {
+  --primary-bg: #94c2c5;
+  --container-bg: #f5f5dc;
+  --accent: #ecae67;
+  --accent-hover: #088b60;
+  --checked-bg: #9dd4a5;
+  --danger: #aa2727;
+  --danger-hover: #fd1313;
+  --shadow: 0px 5px 5px #7c6644;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.todolist-container {
+  position: relative;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  background-color: var(--container-bg);
+  width: 50%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+h1 {
+  font-size: 2.5rem;
+}
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.inp-element {
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 8px 5px;
+  margin: 20px 0px;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  color: #333;
+}
+.btn {
+  height: 40px;
+  width: 100px;
+  border: none;
+  background-color: var(--accent);
+  border-radius: 15px;
+  color: #0a0a0a;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
+}
+.btn:hover {
+  background-color: var(--accent-hover);
+  color: #fff;
+}
+.todoList {
+  list-style: none;
+  margin-top: 10px;
+}
+.task-item {
+  background-color: #151111;
+  padding: 5px 10px 5px 40px;
+  margin: 15px 0px;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid #777673;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+}
+.task-item:hover {
+  background-color: #530026;
+}
+.task-item::before {
+  content: "";
+  background: url("../7-Simple-To-Do-List 1.0 Html css js/images/icons8-circle-50.png");
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+.checked {
+  background-color: var(--checked-bg);
+  color: #222;
+}
+.checked::before {
+  background: url("../7-Simple-To-Do-List 1.0 Html css js/images/icons8-checked-50.png");
+  background-size: cover;
+}
+.span-cross {
+  margin-left: auto;
+  background-color: #f1e9e9;
+  border-radius: 50%;
+  padding: 4.5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.span-cross:hover {
+  background-color: var(--danger-hover);
+  color: #fff;
+}
+.log-container {
+  background-color: #808cb3;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  margin: 0px 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#log-history {
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #9cc7c7;
+  margin: 20px 0;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #b3a5a5;
+  text-align: center;
+  font-size: 1rem;
+}
+tr:nth-child(even) td {
+  background-color: #d8d6d6;
+}
+tr:nth-child(odd) td {
+  background-color: #fff;
+}
+tr:hover td {
+  background-color: #4b4a4a;
+  color: #fff;
+}
+#btn-2 {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: relative;
+}
+#hide-log-info {
+  background-color: #b6b861;
+  border-radius: 10px;
+  padding: 20px;
+  color: #152386;
+  font-size: 1rem;
+  position: absolute;
+  width: 30%;
+  display: none;
+  max-width: 300px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 5px 5px #0c0c0c;
+}
+#reset-btn {
+  background-color: #b68a8a;
+}
+#reset-btn:hover {
+  background-color: var(--danger);
+  color: #fff;
+}
